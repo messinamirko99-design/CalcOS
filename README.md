@@ -263,7 +263,7 @@ Bruce is an incredible toolkit, but it assumes a TFT display is always present. 
 + Everyone who contributed — thanks :heart:
 
 **This remix:**
-+ [@valentina-messina](https://github.com/valentina-messina) — BARTOS & CYD-Console board variants, I2C LCD driver, 2-button navigation, marquee scroll, backlight timeout, I2C auto-detect
++ [@lol753](https://github.com/lol753) — BARTOS & CYD-Console board variants, I2C LCD driver, 2-button navigation, marquee scroll, backlight timeout, I2C auto-detect
 
 ---
 
