@@ -5,7 +5,7 @@
 This is a community remix of [Bruce firmware](https://github.com/pr3y/Bruce) adding two new board variants designed to run **without a built-in TFT LCD display**, making Bruce accessible on bare ESP32 boards and custom hardware.
 
 > **Upstream:** Bruce v1.14 by [@pr3y](https://github.com/pr3y) and contributors.
-> **Remix by:** [@valentina-messina](https://github.com/valentina-messina)
+> **Remix by:** [@lol753](https://github.com/lol753)
 
 ---
 
