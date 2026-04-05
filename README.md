@@ -18,7 +18,7 @@ A hardware-first variant with a 2-button + I2C 16×2 LCD interface.
 |-----------|------|
 | LCD SDA | 21 |
 | LCD SCL | 22 |
-| SCROLL button (next) | 0 → GND |
+| SCROLL button (next) | this button is on the gpio0 and if you are using a esp32 dev kit its the second button after reboot |
 | SELECT button (confirm/back) | 26 → GND |
 
 - **I2C auto-detect** — scans `0x27` → `0x3F` → `0x20` → `0x38` at boot
