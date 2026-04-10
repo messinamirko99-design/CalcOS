@@ -2,6 +2,10 @@
 
 # :shark: Bruce — BARTOS Remix
 
+[![GitHub Release](https://img.shields.io/github/v/release/lol753/CalcOS?label=latest%20release&style=flat-square)](https://github.com/lol753/CalcOS/releases/latest)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg?style=flat-square)](https://www.gnu.org/licenses/agpl-3.0)
+[![Upstream: Bruce](https://img.shields.io/badge/upstream-Bruce%20v1.14-orange?style=flat-square)](https://github.com/pr3y/Bruce)
+
 This is a community remix of [Bruce firmware](https://github.com/pr3y/Bruce) adding two new board variants designed to run **without a built-in TFT LCD display**, making Bruce accessible on bare ESP32 boards and custom hardware.
 
 > **Upstream:** Bruce v1.14 by [@pr3y](https://github.com/pr3y) and contributors.
@@ -18,7 +22,7 @@ A hardware-first variant with a 2-button + I2C 16×2 LCD interface.
 |-----------|------|
 | LCD SDA | 21 |
 | LCD SCL | 22 |
-| SCROLL button (next) | this button is on the gpio0 and if you are using a esp32 dev kit its the second button after reboot |
+| SCROLL button (next) | GPIO0 (the BOOT button on most ESP32 dev kits) |
 | SELECT button (confirm/back) | 26 → GND |
 
 - **I2C auto-detect** — scans `0x27` → `0x3F` → `0x20` → `0x38` at boot
@@ -39,11 +43,28 @@ A headless variant for the CYD-2432S028 (or any ESP32) with serial console navig
 
 ---
 
+## :package: Releases
+
+Pre-built firmware binaries are available on the [**Releases page**](https://github.com/lol753/CalcOS/releases).
+
+Each release includes ready-to-flash `.bin` files for both board variants:
+
+| File | Description |
+|------|-------------|
+| `BARTOS-firmware.bin` | Full firmware for the BARTOS board variant |
+| `CYD-Console-firmware.bin` | Full firmware for the CYD-Console (headless) variant |
+| `bootloader.bin` | Bootloader (shared across variants) |
+| `partitions.bin` | Partition table (shared across variants) |
+
+> 💡 **Just want to flash?** Download the files from the [latest release](https://github.com/lol753/CalcOS/releases/latest) — no need to build from source.
+
+---
+
 ## :building_construction: How to install
 
 ### Flash with ESP32 Flash Download Tool
 
-Use these three files from the release (or your own build output):
+Use these three files from the [latest release](https://github.com/lol753/CalcOS/releases/latest):
 
 | File | Address |
 |------|---------|
