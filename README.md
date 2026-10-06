@@ -5,7 +5,12 @@
 This is a community remix of [Bruce firmware](https://github.com/pr3y/Bruce) adding two new board variants designed to run **without a built-in TFT LCD display**, making Bruce accessible on bare ESP32 boards and custom hardware.
 
 > **Upstream:** Bruce v1.14 by [@pr3y](https://github.com/pr3y) and contributors.
-> **Remix by:** [@lol753](https://github.com/lol753)
+> **Remix by:** [@messinamirko99-design](https://github.com/messinamirko99-design)
+
+---
+
+> [!WARNING]
+> **Disclaimer** — Bruce is a tool for cyber offensive and red team operations, distributed under the AGPL. Intended for legal and authorized security testing only. Use of this software for malicious or unauthorized activities is strictly prohibited. The developers assume no liability for misuse. Use at your own risk.
 
 ---
 
@@ -263,10 +268,4 @@ Bruce is an incredible toolkit, but it assumes a TFT display is always present. 
 + Everyone who contributed — thanks :heart:
 
 **This remix:**
-+ [@lol753](https://github.com/lol753) — BARTOS & CYD-Console board variants, I2C LCD driver, 2-button navigation, marquee scroll, backlight timeout, I2C auto-detect
-
----
-
-## :construction: Disclaimer
-
-Bruce is a tool for cyber offensive and red team operations, distributed under the AGPL. Intended for legal and authorized security testing only. Use of this software for malicious or unauthorized activities is strictly prohibited. The developers assume no liability for misuse. Use at your own risk.
++ [@messinamirko99-design](https://github.com/messinamirko99-design) — BARTOS & CYD-Console board variants, I2C LCD driver, 2-button navigation, marquee scroll, backlight timeout, I2C auto-detect
